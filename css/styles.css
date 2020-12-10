@@ -11,6 +11,7 @@ font-family: 'Noto Sans', sans-serif;
 */
 h1 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 500%;
 }
 
 div {
@@ -35,7 +36,7 @@ div {
     bottom: 300px;
 }
 
-.mid-container {
+.third-box {
     background-color: red;
     width: 200px;
     height: 200px;
@@ -44,7 +45,7 @@ div {
     left: 400px;
 }
 
-.bottom-container {
+.first-box {
     background-color: blue;
     width: 200px;
     height: 200px;
@@ -52,7 +53,7 @@ div {
     position: relative;
     right: 200px;
 }
-.last {
+.second-box {
     background-color: yellow;
     width: 200px;
     height: 200px;
