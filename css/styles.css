@@ -16,8 +16,22 @@ h1 {
     line-height: 2;
 }
 
+h2 {
+    color: teal;
+}
+
 h3 {
     color: #11999E;
+}
+
+p {
+    color: #c75643;
+}
+
+hr {
+    border-top: 5px dotted grey;
+    border-bottom: 0;
+    width: 3%;
 }
 
 div {
@@ -47,6 +61,14 @@ div {
     width: 200px;
     height: 200px;
     display: inline-block;
+    /*
+        static means stays in its place
+        relative means it move relative to its original place (relative to its static position)
+        absolute means relative to nearest positioned ancestor (the element it is in
+        that is relative, which is the body if no such element exists)
+        fixed means relative to viewport so it stays in one place on page the whole time e.g. navbar
+        sticky means position based on user's scroll position
+    */
     position: relative;
     left: 400px;
 }
@@ -55,6 +77,11 @@ div {
     background-color: blue;
     width: 200px;
     height: 200px;
+    /*  
+        inline means things next to each other but cannot change size
+        block means things are below other things and they take up whole width of page
+        inline-block means next to each other and can change size
+    */
     display: inline-block;
     position: relative;
     right: 200px;
@@ -67,3 +94,64 @@ div {
     position: relative;
     right: 200px;
 }
+
+.profile-pic {
+    margin: 20px;
+}
+
+.description {
+    width: 50%;
+    margin: 10px auto 10px auto;
+}
+
+.skill-row {
+    width: 50%;
+    /* this makes format starts from margin top and goes around clockwise */
+    margin: 100px auto 100px auto;
+    text-align: left;
+    /* this is spacing between lines */
+    line-height: 2;
+}
+
+.chilli-img {
+    width: 25%;
+    /* this makes text wrap the image with image on the left */
+    float: left;
+    margin-right: 30px;
+}
+
+.chilli-test {
+    /* like an anti float */
+    clear: left;
+}
+
+.computer-img {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+/* making button */
+.BUTTON_GVY {
+    background: #66BFBF;
+    background-image: -webkit-linear-gradient(top, #66BFBF, #008080);
+    background-image: -moz-linear-gradient(top, #66BFBF, #008080);
+    background-image: -ms-linear-gradient(top, #66BFBF, #008080);
+    background-image: -o-linear-gradient(top, #66BFBF, #008080);
+    background-image: -webkit-gradient(to bottom, #66BFBF, #008080);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    height: 22px;
+    line-height: 22px;
+    color: #FFFFFF;
+    font-family: Noto Sans;
+    width: 137px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px;
+    border: solid #66BFBF 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
